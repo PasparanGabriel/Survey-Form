@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Survey Form</title>
+    </head>
+
+    <body>
+        
+        <div class="container">
+            <h1 id="title" class="d-flex justify-content-center">Formular car</h1>
+
+            <p id="description">Information about the new car model.</p>
+
+            <form id="survey-form">
+              <div>
+                <label id="name-label" for="name">Name : </label>
+                <input autofocus="" type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required="">
+              </div>
+              
+              <div>
+                <label id="email-label" for="email">Email :</label>
+                <input type="email" name="email" id="email" class="input-field" required="" placeholder="Enter your Email">
+              </div>
+              
+              <div>
+                <label id="number-label" for="age">Age: </label>
+                <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+              </div>
+              
+              <div>
+                <label for="currentPos">Car model:</label>
+                  <select id="dropdown" name="currentPos">
+                    <option value="1">AUDI</option>
+                    <option value="2">BMW</option>
+                    <option value="3">DACIA</option>
+                    <option value="4">FIAT</option>
+                    <option value="5">FORD</option>
+                    <option value="6">MERCEDES-BENZ</option>
+                    <option value="7">OPEL</option>
+                    <option value="8">RENAULT</option>
+                    <option value="9">SEAT</option>
+                    <option value="10">VOLKSWAGEN</option>
+                </select>
+              </div>
+              
+              <div>
+                <label for="userRating">You have a car?</label>
+                <ul class="list-unstyled">
+                  <li><label>Yes<input name="radio-buttons" value="1" type="radio"></label></li>
+                  <li><label>No<input name="radio-buttons" value="2" type="radio"></label></li>
+                </ul>
+              </div>
+              
+              <div>
+                <label for="preferences">Car equipment: </label>
+                <ul id="preferences" class="list-unstyled">
+                  <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" >Dead Angle Monitoring System</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" >AC</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" >Light and parking sensors</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" >Fog lights</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" >Cruise control</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" >Bluetooth and USB connectivity</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" >Heliomate mirrors</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" >Automatic transmission</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" >Manual transmission</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="10" type="checkbox">Automatic pilot</label></li>
+                </ul>
+              </div>
+              
+              <div>
+                <label for="comments">Suggestions for the new car?</label><br>
+                <textarea id="comments" class="input-field col-6" name="comment" placeholder="Enter your comment here..."></textarea>
+              </div>
+              
+              <button id="submit" class="btn btn-success mb-4" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Test -->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    </body>
+</html>
